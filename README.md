@@ -1,7 +1,7 @@
 mysql-plugin-proc-vars
 ======================
 
-mysql information plugin to show all variables of every process
+mysql information plugin to show all variables of every process for mysql 5.5+
 
 ## usage
 
