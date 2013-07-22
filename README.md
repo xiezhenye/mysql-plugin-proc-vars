@@ -21,4 +21,13 @@ then, load the plugin into mysql
     
 thus, you can found `PROCESS_VARIABLES` table in `information_schema` database
 
-try `select * from information_schema.PROCESS_VARIABLES where NAME = 'autocommit';` 
+try `select * from information_schema.PROCESS_VARIABLES where NAME = 'autocommit';` and you may got something like
+
+    +----+------------+-------+
+    | ID | NAME       | VALUE |
+    +----+------------+-------+
+    |  2 | autocommit | ON    |
+    +----+------------+-------+
+    |  5 | autocommit | ON    |
+    +----+------------+-------+
+    2 rows in set (0.00 sec)
