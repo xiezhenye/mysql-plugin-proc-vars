@@ -3,7 +3,6 @@
 
 #include "sql_class.h"
 #include "table.h"
-#include "hash.h"
 #include "global_threads.h"
 #include "set_var.h"
 
@@ -16,7 +15,7 @@ static ST_FIELD_INFO proc_vars_table_fields[] =
 {
   {"ID",    11,   MYSQL_TYPE_LONG,   0, MY_I_S_UNSIGNED, 0, 0},
   {"NAME",  255,   MYSQL_TYPE_STRING, 0, 0, 0, 0},
-  {"VALUE", 255,  MYSQL_TYPE_STRING, 0, 0, 0, 0},
+  {"VALUE", 1000,  MYSQL_TYPE_STRING, 0, 0, 0, 0},
   {0, 0, MYSQL_TYPE_NULL, 0, 0, 0, 0}  
 };
 
