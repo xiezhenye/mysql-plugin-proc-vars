@@ -8,7 +8,7 @@ mysql information plugin to show all variables of every process
 
 first, compile the plugin and install in to plugin dir
 
-    cp src /path/to/mysql-src/plugin/proc_vars
+    cp -r src /path/to/mysql-src/plugin/proc_vars
     cd /path/to/mysql-src
     cmake .
     cd plugin/proc_vars
