@@ -21,4 +21,4 @@ then, load the plugin into mysql
     
 thus, you can found `PROCESS_VARIABLES` table in `information_schema` database
 
-try `select * from information_schema.PROCESS_VARIABLES ;` 
+try `select * from information_schema.PROCESS_VARIABLES where NAME = 'autocommit';` 
