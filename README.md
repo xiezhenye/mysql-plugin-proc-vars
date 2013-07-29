@@ -3,7 +3,8 @@ mysql-plugin-proc-vars
 
 mysql information schema plugin to show all variables of every process for mysql 5.5+
 
-## usage
+usage
+-----
 
 
 first, compile the plugin and install in to plugin dir
@@ -23,6 +24,7 @@ thus, you can found `PROCESS_VARIABLES` table in `information_schema` database
 
 try `select * from information_schema.PROCESS_VARIABLES where NAME = 'autocommit';` and you may got something like
 
+    mysql> select * from information_schema.PROCESS_VARIABLES where NAME = 'autocommit';
     +----+------------+-------+
     | ID | NAME       | VALUE |
     +----+------------+-------+
