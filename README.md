@@ -11,7 +11,7 @@ first, compile the plugin and install in to plugin dir
 
     cp -r src /path/to/mysql-src/plugin/proc_vars
     cd /path/to/mysql-src
-    cmake .
+    cmake . -DBUILD_CONFIG=mysql_release
     cd plugin/proc_vars
     make
     make install
