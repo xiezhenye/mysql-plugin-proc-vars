@@ -15,6 +15,8 @@ first, compile the plugin and install in to plugin dir
     cd plugin/proc_vars
     make
     make install
+
+CAUTION: mysql plugins MUST be built using the same version of the source code and the same build arguments. If mysqld is built as a debug version without cmake parameter -DBUILD_CONFIG, the parameter must not be added when compiling plugins.    
     
 then, load the plugin into mysql
 
